@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: '/avanza/',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/avanza/'
+    : '/'
 };
